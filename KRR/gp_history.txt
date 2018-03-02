@@ -1,0 +1,4 @@
+gp zaj2.gp
+gp zaj1.gp
+/q
+\q

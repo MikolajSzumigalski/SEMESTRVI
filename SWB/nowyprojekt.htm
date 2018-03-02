@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,nofollow">
+
+<title>wwawrzy/2016_DZ_SWB/Altera_Quartus_Project - EduWiki</title>
+<script type="text/javascript" src="nowyprojekt_files/common.js"></script>
+<script type="text/javascript"><!--
+function add_gui_editor_links() {
+    // Add gui editor link after the text editor link
+
+    // If the variable is not set or browser is not compatible, exit
+    try {gui_editor_link_href}
+    catch (e) {
+        //alert("add_gui_editor_links: gui_editor_link_href not here");
+        return
+    }
+    if (can_use_gui_editor() == false){
+        //alert("add_gui_editor_links: can't use gui_editor");
+        return;
+    }
+    var all = document.getElementsByName('texteditlink');
+    for (i = 0; i < all.length; i++) {
+        var textEditorLink = all[i];
+        // Create a a link
+        var guiEditorLink = document.createElement('a');
+        guiEditorLink.href = gui_editor_link_href;
+        guiEditorLink.className = "edit";
+        var text = document.createTextNode(gui_editor_link_text);
+        guiEditorLink.appendChild(text);
+        // Insert in the editbar
+        var editbar = textEditorLink.parentNode
+        editbar.insertBefore(guiEditorLink, textEditorLink);
+    }
+}
+--></script>
+
+
+<link rel="stylesheet" type="text/css" href="nowyprojekt_files/style.css">
+
+
+
+<link rel="Start" href="https://eduwiki.wmi.amu.edu.pl/Strona%20g%C5%82%C3%B3wna">
+<link rel="Alternate" title="Wiki Markup" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=print">
+<link rel="Up" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB">
+<link rel="Appendix" title="DE1_pin_assignments.csv" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=AttachFile&amp;do=view&amp;target=DE1_pin_assignments.csv">
+<link rel="Search" href="https://eduwiki.wmi.amu.edu.pl/FindPage">
+<link rel="Index" href="https://eduwiki.wmi.amu.edu.pl/TitleIndex">
+<link rel="Glossary" href="https://eduwiki.wmi.amu.edu.pl/WordIndex">
+<link rel="Help" href="https://eduwiki.wmi.amu.edu.pl/HelpOnFormatting">
+</head>
+
+<body dir="ltr" lang="en">
+<div class="header"><a class="logo" href="https://eduwiki.wmi.amu.edu.pl/Strona%20g%C5%82%C3%B3wna">EduWiki</a>
+<form class="search" method="get" action="">
+<p>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label for="search">Search:</label>
+<input id="search" name="value" type="text">
+<input id="titlesearch" name="titlesearch" value="Titles" type="submit">
+<input id="fullsearch" name="fullsearch" value="Text" type="submit">
+</p>
+</form><ul id="username"><li><a href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=login" id="login" rel="nofollow">Login</a></li></ul><ul class="gotobar"><li class="wikilink"><a href="https://eduwiki.wmi.amu.edu.pl/Strona%20g%C5%82%C3%B3wna">Strona główna</a></li> <li class="wikilink"><a href="https://eduwiki.wmi.amu.edu.pl/EduWiki">Edu Wiki</a></li> <li class="wikilink"><a href="https://eduwiki.wmi.amu.edu.pl/OstatnieZmiany">Ostatnie Zmiany</a></li> <li class="wikilink"><a href="https://eduwiki.wmi.amu.edu.pl/Znajd%C5%BAStron%C4%99">Znajdź Stronę</a></li> <li class="wikilink"><a href="https://eduwiki.wmi.amu.edu.pl/Pomoc">Pomoc</a></li><li class="clear"></li></ul><div class="editbar"> <a class="password" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=login">Locked</a> <a class="history" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=info">History</a> <a class="admin" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=PageActions">Actions</a> </div><h1><span class="pagepath"><a href="https://eduwiki.wmi.amu.edu.pl/wwawrzy">wwawrzy</a>/<a href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB">2016_DZ_SWB</a>/</span><a class="backlink" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=fullsearch&amp;context=180&amp;value=linkto%3A%22wwawrzy/2016_DZ_SWB/Altera_Quartus_Project%22" rel="nofollow" title="Click to do a full-text search for this title">Altera_Quartus_Project</a></h1></div><div class="wrapper"><div class="sidebar"><div dir="ltr" id="SideBar.sidebar" lang="en"><span class="anchor" id="SideBar.top"></span>
+<span class="anchor" id="SideBar.line-1"></span><p class="line867">
+</p><h3 id="SideBar.Prowadz.2BAQU-cy">Prowadzący</h3>
+<span class="anchor" id="SideBar.line-2"></span><ul><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mbork">Marcin Borkowski</a> <span class="anchor" id="SideBar.line-3"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mcichon">Mieczysław Cichoń</a> <span class="anchor" id="SideBar.line-4"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/chris">Krzysztof Dyczkowski</a> <span class="anchor" id="SideBar.line-5"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/tdwojak">Tomasz Dwojak</a> <span class="anchor" id="SideBar.line-6"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mgalazka">Marek Gałązka</a> <span class="anchor" id="SideBar.line-7"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/filipg">Filip Graliński</a> <span class="anchor" id="SideBar.line-8"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/marcing">Marcin Gogolewski</a> <span class="anchor" id="SideBar.line-9"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/romang">Roman Grundkiewicz</a> <span class="anchor" id="SideBar.line-10"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/ruanda">Mateusz Hromada</a> <span class="anchor" id="SideBar.line-11"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/jassem">Krzysztof Jassem</a> <span class="anchor" id="SideBar.line-12"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/jarzabek">Michał Jarząbek</a> <span class="anchor" id="SideBar.line-13"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/rjawor">Rafał Jaworski</a> <span class="anchor" id="SideBar.line-14"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/junczys">Marcin Junczys-Dowmunt</a> <span class="anchor" id="SideBar.line-15"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/kalkos">Maciej Kalkowski</a> <span class="anchor" id="SideBar.line-16"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mkolowsk">Mirosława Kołowska-Gawiejnowicz</a> <span class="anchor" id="SideBar.line-17"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mkubis">Marek Kubis</a> <span class="anchor" id="SideBar.line-18"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mmielcarek">Marta Smektała</a> <span class="anchor" id="SideBar.line-19"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/jacekmar">Jacek Marciniak</a> <span class="anchor" id="SideBar.line-20"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/pilka">Tomasz Piłka</a> <span class="anchor" id="SideBar.line-21"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/s375666">Jakub Pokrywka</a> <span class="anchor" id="SideBar.line-22"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mprill">Maciej Prill</a> <span class="anchor" id="SideBar.line-23"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mren">Michał Ren</a> <span class="anchor" id="SideBar.line-24"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/pms">Paweł Skórzewski</a> <span class="anchor" id="SideBar.line-25"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/ania">Anna Stachowiak</a> <span class="anchor" id="SideBar.line-26"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/jesz">Jerzy Szymański</a> <span class="anchor" id="SideBar.line-27"></span></p></li><li><p class="line891"><a class="nonexistent" href="https://eduwiki.wmi.amu.edu.pl/betom">Bernadeta Tomasz</a> <span class="anchor" id="SideBar.line-28"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/vetulani">Zygmunt Vetulani</a> <span class="anchor" id="SideBar.line-29"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/wwawrzy">Wojciech Wawrzyniak</a> <span class="anchor" id="SideBar.line-30"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/andre">Andrzej Wójtowicz</a> <span class="anchor" id="SideBar.line-31"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/wygralak">Maciej Wygralak</a> <span class="anchor" id="SideBar.line-32"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/tzietkiewicz">Tomasz Zietkiewicz</a> <span class="anchor" id="SideBar.line-33"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/bikol">Patryk Żywica</a> <span class="anchor" id="SideBar.line-34"></span><span class="anchor" id="SideBar.line-35"></span></p></li></ul><p class="line867">
+</p><h3 id="SideBar.Prowadz.2BAQU-cy_spoza_Wydzia.2BAUI-u">Prowadzący spoza Wydziału</h3>
+<span class="anchor" id="SideBar.line-36"></span><ul><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mstepniak">Mateusz Stępniak</a> <span class="anchor" id="SideBar.line-37"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/pwyrobek">Przemysław Wyrobek</a> <span class="anchor" id="SideBar.line-38"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/wyrwis">Bartosz Wyrwał</a> <span class="anchor" id="SideBar.line-39"></span><span class="anchor" id="SideBar.line-40"></span></p></li></ul><p class="line867">
+</p><h3 id="SideBar.Archiwalne">Archiwalne</h3>
+<span class="anchor" id="SideBar.line-41"></span><ul><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/kowalski">Tomasz Kowalski</a> <span class="anchor" id="SideBar.line-42"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/lison">Maciej Lison</a> <span class="anchor" id="SideBar.line-43"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/piotr">Piotr Michoński</a> <span class="anchor" id="SideBar.line-44"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/arek">Arkadiusz Szał</a> <span class="anchor" id="SideBar.line-45"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/quati">Krzysztof Szarzyński</a> <span class="anchor" id="SideBar.line-46"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/mwalas">Marcin Walas</a> <span class="anchor" id="SideBar.line-47"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/ynka">Justyna Walkowska</a> <span class="anchor" id="SideBar.line-48"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/pawelwaw">Paweł Wawrzyniak</a> <span class="anchor" id="SideBar.line-49"></span><span class="anchor" id="SideBar.line-50"></span></p></li></ul><p class="line867">
+</p><h3 id="SideBar.Materia.2BAUI-y">Materiały</h3>
+<span class="anchor" id="SideBar.line-51"></span><ul><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/BardzoKr%C3%B3tkieWprowadzenie">Bardzo Krótkie Wprowadzenie</a> <span class="anchor" id="SideBar.line-52"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/Czytelnia">Czytelnia</a> <span class="anchor" id="SideBar.line-53"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/Cele%20i%20za%C5%82o%C5%BCenia">Cele i założenia</a> <span class="anchor" id="SideBar.line-54"></span></p></li><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/Cz%C4%99stoZadawanePytania">Często Zadawane Pytania</a> <span class="anchor" id="SideBar.line-55"></span><span class="anchor" id="SideBar.line-56"></span></p></li></ul><p class="line867">
+</p><h2 id="SideBar.Inne">Inne</h2>
+<span class="anchor" id="SideBar.line-57"></span><ul><li><p class="line891"><a href="https://eduwiki.wmi.amu.edu.pl/Strony%20student%C3%B3w">Strony studentów</a> <span class="anchor" id="SideBar.line-58"></span></p></li></ul><span class="anchor" id="SideBar.bottom"></span></div></div><div class="content" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h1 id="Tworzenie_projektu_w_Altera_Quartus_dla_DE-1">Tworzenie projektu w Altera Quartus dla DE-1</h1>
+<span class="anchor" id="line-2"></span><ol type="1"><li>Uruchom Altera Quartus II <span class="anchor" id="line-3"></span></li><li><p class="line862">File -&gt; New Project Wizard -&gt; Next <span class="anchor" id="line-4"></span></p></li><li>[Directory, Name...] Katalog roboczy na dysku J:\ <span class="anchor" id="line-5"></span></li><li>[Add Files] Next <span class="anchor" id="line-6"></span></li><li><p class="line862">[Family &amp; Device Settings]  <span class="anchor" id="line-7"></span></p><ul><li>Device family: Cyclone II <span class="anchor" id="line-8"></span></li><li><p class="line862">Available devices: <strong>EP2C20F484C7</strong> <span class="anchor" id="line-9"></span></p></li><li>Next <span class="anchor" id="line-10"></span></li></ul></li><li>[EDA Tool Settings] Next <span class="anchor" id="line-11"></span></li><li><p class="line862">[Summary] sprawdzić czy Device zgadza się z 5. -&gt; Finish <span class="anchor" id="line-12"></span></p></li><li><p class="line862">W <em>Project Navigator</em> 2x LPM na Cyclone II: EP2C20F484C7 <span class="anchor" id="line-13"></span></p><ul><li><p class="line862">Device and Pin Options... -&gt; Unused Pins -&gt; Reserve all unused pins: As input tri-stated -&gt; OK -&gt; OK <span class="anchor" id="line-14"></span></p></li></ul></li><li><p class="line862">Assignments -&gt; Import Assignments... -&gt; wskazać <a class="attachment" href="https://eduwiki.wmi.amu.edu.pl/wwawrzy/2016_DZ_SWB/Altera_Quartus_Project?action=AttachFile&amp;do=view&amp;target=DE1_pin_assignments.csv" title="DE1_pin_assignments.csv">DE1_pin_assignments.csv</a> -&gt; Open -&gt; OK <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p></li></ol><p class="line867">
+</p><h1 id="Przydatne_opcje">Przydatne opcje</h1>
+<span class="anchor" id="line-17"></span><p class="line874">Kompilacja zawsze zapisze zmienione pliki źródeł bez potwierdzenia użytkownika: <span class="anchor" id="line-18"></span></p><ul><li><p class="line862">Tools -&gt; Options -&gt; Processing -&gt;   <span class="anchor" id="line-19"></span></p><ul><li>[x] Save changes to all files before processing the design  <span class="anchor" id="line-20"></span></li><li>[ ] Confirm before saving files  <span class="anchor" id="line-21"></span></li></ul></li></ul><span class="anchor" id="bottom"></span></div><div id="pagebottom"></div>
+</div>
+</div><div class="footer"><span class="time" dir="ltr" lang="en">last edited 2017-02-24 09:12:29 by <span title="Wojciech Wawrzyniak"><a href="https://eduwiki.wmi.amu.edu.pl/wwawrzy" title="Wojciech Wawrzyniak">wwawrzy</a></span></span>
+</div>
+
+
+</body></html>

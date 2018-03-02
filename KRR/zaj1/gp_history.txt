@@ -1,0 +1,10 @@
+gp zaj1.gp
+gp p1.gp
+p1.gp
+\r p1.gp
+\r p2.gp
+\r p3.gp
+\r p4.gp
+\r p1.gp
+exit
+\q

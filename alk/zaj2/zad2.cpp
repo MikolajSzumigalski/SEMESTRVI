@@ -7,7 +7,7 @@ int rekurencja(int k, int n, string wyraz){
 		{
 			for(int i=1; i<=n; i++)	
 				{
-					wyraz=wyraz+"a";//to_string(i);
+					wyraz=wyraz+string(i);
 					rekurencja(k-1, n, wyraz );	
 			}
 		}
@@ -16,7 +16,7 @@ int rekurencja(int k, int n, string wyraz){
 			cout<<"{ ";
 			//for(int i=1; i<k; i++)
 				cout<<wyraz<<" ";
-
+			
 			cout<<"}"<<endl;	
 			return 0;
 		}

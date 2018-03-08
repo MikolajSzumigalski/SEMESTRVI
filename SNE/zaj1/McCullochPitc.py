@@ -29,7 +29,7 @@ while True:
 		n = 2
 		for i in range (0, n-1):
 			u.insert(i, int(input()))
-		u.insert(1, 1)
+		u.insert(0, 1)
 		w.insert(0, -0.5)
 		w.insert(1, 0.3)
 		for i in range(0,n):

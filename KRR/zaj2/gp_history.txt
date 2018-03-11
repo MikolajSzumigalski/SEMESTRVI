@@ -26,3 +26,9 @@
 \r generowanie.gp
 \r szyfrowanie.gp
 \r deszyfrowanie.gp
+\r generowanie.gp
+\r szyfrowanie.gp
+\r deszyfrowanie.gp
+\r generowanie.gp
+\r szyfrowanie.gp
+\r deszyfrowanie.gp

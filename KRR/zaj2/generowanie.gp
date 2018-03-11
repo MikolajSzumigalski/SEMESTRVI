@@ -1,9 +1,9 @@
 {
- p=random(1024);
- while(!isprime(p), p=random(1024));
- 
- q=random(1024);
- while(!isprime(q), q=random(1024));
+ p=random(2^1024);
+ while(!isprime(p), p=random(2^1024));
+
+ q=random(2^1024);
+ while(!isprime(q), q=random(2^1024));
  print("p=", p);
  print("q=", q);
  n = p * q;

@@ -5,28 +5,26 @@ def xor(a, b):
         return 1
     else:
         return 0
+    
+n = int(input("Wprowadz maksymalna wartosc w zbiorze (n): "))
 
-r = 0
-
-n = int(input("Wprowadź maksymalną wartość w zbiorze (n): "))
-
-T = list(map(int, input("wprowadź elementy: ").split()))
+T = list(map(int, input("wprowadz elementy podzbioru (oddzielone spacja): ").split()))
 Bin = []
 
 for i in range (0, n):
     Bin.append(0)
-
-for i in range (0, n):
+    
+for i in range (0, len(T)):
     Bin[T[i]-1] = 1
 
     Bin[0] = xor(0, Bin[0])
 for i in range (1, n):
     Bin[i] = xor(Bin[i-1], Bin[i])
 
-suma = 1
-for i in range (n-1, -1, -1):
+suma = 0
+for i in range (0, n):
     if Bin[i] != 0:
-        suma = suma + 1 *2
+        suma = suma *2 +1
     else:
         suma = suma * 2
 print (suma)

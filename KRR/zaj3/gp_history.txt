@@ -1,3 +1,5 @@
 \r millerrabin.gp
 \r millerrabin.gp 
 \r millerrabin.gp
+\r millerrabid.gp
+\r millerrabin.gp

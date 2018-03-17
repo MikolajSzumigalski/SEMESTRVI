@@ -16,7 +16,8 @@ TESTMILLERARABINA = (n, k) ->{
   if(lift(Mod(v, n))!=1 && lift(Mod(v, n))!=-1, print ("nie"); break);
  }
 {
- n=random(1024);
+n=random(102400);
+while(!isprime(n), n=random(102400));
  k=30;
  print("n= ",n);
  TESTMILLERARABINA(n, k);

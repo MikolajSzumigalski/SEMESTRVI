@@ -1,0 +1,3 @@
+\r rPollard.gp
+print("p=", p);
+\r rPollard.gp

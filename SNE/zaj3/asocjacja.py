@@ -57,10 +57,11 @@ def F( x ):
 def interface( x ):
     for i in range (0, 25):
          if x[i] == 1.0:
-             print("*", end="")
+             print("* ", end="")
          else:
-             print("-", end="")
+             print("- ", end="")
          if((i+1)%5 == 0):
            print("\n")
 
-print(interface(F(z0p)))
+print(interface(z0))
+print(interface(z1))

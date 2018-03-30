@@ -1,35 +1,36 @@
 f = (x) -> {
- x = lift(Mod(x*x+1, n))
+ x = lift(Mod(x+1, n))*lift(Mod(x+1, n))+1
 }
 
 rPollard = (n) -> {
- x = vector(n);
- y = vector(n);
- x[1] = random(n);
- y[1] = x[1];
+ x = random(n);
+ y = x;
  i = 2;
- while (i < 1.77*sqrt(n)+1,
+ while (i < sqrt(n),
   licznik = licznik +1;
-  x[i] = f(x[i-1]);
-  y[i] = f(f(y[i-1]));
-  if(gcd(x[i]-y[i],n) >= 1,
-    rpol = gcd(x[i]-y[i], n);
+  xp =x;
+  yp = y;
+  x = f(xp);
+  y = f(f(yp));
+  if(gcd(x-y,n) != 1,
+    rpol = gcd(x-y, n);
     print("p: ", rpol);
     print("ilosc iteracji: "licznik);
     );
+
     i = i + 1;
     );
 }
 {
-p=random(1024);
-while(!isprime(p), p=random(1024));
+p=random(2^20);
+while(!isprime(p), p=random(2^20));
 
-q=random(1024);
-while(!isprime(q), q=random(1024));
+q=random(2^20);
+while(!isprime(q), q=random(2^20));
 licznik = 0;
 n = p*q;
 rPollard(n);
-while(n % rpol != 0 || rpol == 1,
+while(n % rpol != 0 || rpol == 1 || rpol == n,
   rPollard(n);
   );
   print("n: ", n);

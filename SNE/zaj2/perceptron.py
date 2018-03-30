@@ -66,12 +66,7 @@ counter = 0
 
 while counter !=s:
 	r = f(np.dot(w, u[t%5]))
-	#x = w + c*(z(t)-r)*u[t%5]
 	w = w + c*(z(t)-y(w, t))*u[t%5]
-	#if (x == x2).all():
-	#	 print("O cie chuj")
-	#w = x
-	#print(t%5, z(t), r)
 	if z(t) == r:
 		counter = counter + 1
 	else:

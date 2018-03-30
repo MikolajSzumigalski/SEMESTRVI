@@ -29,21 +29,20 @@ begin
 end
 endmodule	
 
-module LOSUJ( CLOCK_50, KEY, HEX0 );
-input CLOCK_50;
-input [0:0] KEY;
-output [6:0] HEX0;
 
-reg r_reg, r_next;
+module CZAS(input [0:0] KEY, input CLOCK_50, output HEX0, output HEX1, output HEX2, output HEX3);
+reg [25:0] licznik;
+reg [15:0] liczsetne;
 always @(posedge CLOCK_50)
-r_reg <= r_next;
-
-always @*
-if (SW[0]) r_next = SW[1];
-else
- r_next = r_reg;
-always @*
-DECtoHEX(r_reg, HEX0);
-
-
+begin
+	licznik = licznik + 1'b1;
+	if(licznik%500000 == 0)
+		liczsetne = liczsetne+1'b1;
+	DectoHEX((liczsetne%10), HEX3);
+	DectoHEX(((liczsetne/10)%10), HEX2);
+	DectoHEX(((liczsetne/100)%10), HEX1);
+	DectoHEX(((liczsetne/1000)%10), HEX0);
+	if(!Key[0])
+		liczsetne = 0;
+end	
 endmodule

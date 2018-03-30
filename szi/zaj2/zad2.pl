@@ -50,3 +50,6 @@ czlowiek(X) :- kobieta(X).
 czlowiek(X) :- mezczyzna(X).
 przodek(X,Y) :- rodzic(X,Y).
 przodek(X,Y) :- rodzic(X, C), przodek(C, Y).
+brat1(X,Y):-not(X=Y),rodzic(Z,X),rodzic(Z,Y),mezczyzna(X).
+brat2(X,Y):-rodzic(Z,X),not(X=Y),rodzic(Z,Y),mezczyzna(X).
+brat3(X,Y):-rodzic(Z,X),rodzic(Z,Y),not(X=Y),mezczyzna(X).

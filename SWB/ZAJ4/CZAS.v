@@ -51,7 +51,10 @@ begin
 		liczsetne = 0;
 end	
 endmodule*/
-/*module CZAS(input [3:0] KEY, input [0:0] SW, output [3:0] LEDR, input CLOCK_50);
+
+//ZADANIE 2
+/*
+module CZAS(input [3:0] KEY, input [0:0] SW, output [3:0] LEDR, input CLOCK_50);
 reg [3:0] stan;
 PomModule(KEY[0], KEY[1], KEY[2], KEY[3], stan, LEDR[0],LEDR[1],LEDR[2],LEDR[3]);
 always @(posedge CLOCK_50)
@@ -90,7 +93,7 @@ begin
 		LEDR3 = 1'b 1;
 	end	
 end
-endmodule	*/
+endmodule*/	
 
 //PRACA DOMOWA
 
@@ -126,10 +129,12 @@ end
 endmodule	
 
 
-module CZAS(input [0:0] KEY, input CLOCK_50, output [6:0] HEX0, output [6:0]HEX1, output [6:0]HEX2, output [6:0]HEX3);
+module CZAS(input [3:0] KEY, input CLOCK_50, output [6:0] HEX0, output [6:0]HEX1, output [6:0]HEX2, output [6:0]HEX3);
 reg [25:0] licznik;
 reg [15:0] liczsetne;
 reg [15:0] liczpo3;
+reg [15:0] liczpo3x;
+reg [15:0] pom;
 	
 	DECtoHEX((liczpo3%10), HEX0);
 	DECtoHEX(((liczpo3/10)%10), HEX1);
@@ -138,11 +143,37 @@ reg [15:0] liczpo3;
 	
 always @(posedge CLOCK_50)
 begin
-	licznik = licznik + 1'b1;
-	if(licznik%500000 == 0)
-		liczsetne = liczsetne+1'b1;
-	if(liczsetne > 1000)
-		liczpo3 = liczpo3+1'b1;
 
-end	
+	if (!KEY[0] && pom == 0)
+	begin
+		liczpo3 = 0;
+		pom = 1;
+	end	
+	
+	if (!KEY[3])
+	begin
+		pom = 0;
+		licznik = 0;
+		liczsetne = 0;
+	end
+	
+	if (pom == 1)
+	begin
+		if(!KEY[0] && pom==1 && liczsetne < 300)
+		begin
+			liczpo3 = liczpo3+1'b1;
+		end
+		licznik = licznik + 1'b1;
+		if(licznik%500000 == 0)
+		begin
+			liczsetne = liczsetne+1'b1;
+			licznik = 0;
+		end	
+		if(liczsetne > 300 && licznik%500000 == 0)
+		begin
+			liczpo3 = liczpo3+1'b1;
+		end
+	end	
+
+end
 endmodule

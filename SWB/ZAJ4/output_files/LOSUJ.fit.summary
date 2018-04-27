@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Mar 27 14:58:05 2018
+Fitter Status : Successful - Fri Apr 06 11:17:24 2018
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : LOSUJ
 Top-level Entity Name : CZAS
 Family : Cyclone II
 Device : EP2C20F484C7
 Timing Models : Final
-Total logic elements : 1,570 / 18,752 ( 8 % )
-    Total combinational functions : 1,570 / 18,752 ( 8 % )
-    Dedicated logic registers : 58 / 18,752 ( < 1 % )
-Total registers : 58
-Total pins : 30 / 315 ( 10 % )
+Total logic elements : 2,098 / 18,752 ( 11 % )
+    Total combinational functions : 2,098 / 18,752 ( 11 % )
+    Dedicated logic registers : 59 / 18,752 ( < 1 % )
+Total registers : 59
+Total pins : 33 / 315 ( 10 % )
 Total virtual pins : 0
 Total memory bits : 0 / 239,616 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )

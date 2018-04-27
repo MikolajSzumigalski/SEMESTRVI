@@ -1,0 +1,23 @@
+\r zad.gp
+parisezemax = 800000000
+\r zad.gp
+v^v
+v*v
+v^4000
+v^4096
+v^4097
+v^4098
+\r zad.gp
+isprime(p)
+isprime(q)
+\r zad.gp
+isprime(q)
+isprime(p)
+\r zad.gp
+isprime(p)
+isprime(q)
+\r zad.gp
+isprime(p)
+isprime(q)
+q
+n

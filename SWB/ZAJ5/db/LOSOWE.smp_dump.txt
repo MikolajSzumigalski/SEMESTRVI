@@ -1,0 +1,5 @@
+
+State Machine - |LOSOWE|wartownikX
+Name wartownikX.01 
+wartownikX.00 0 
+wartownikX.01 1 

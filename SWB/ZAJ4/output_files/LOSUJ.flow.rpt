@@ -1,5 +1,5 @@
 Flow report for LOSUJ
-Tue Mar 27 14:58:12 2018
+Fri Apr 06 11:17:32 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 27 14:58:09 2018           ;
+; Flow Status                        ; Successful - Fri Apr 06 11:17:29 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LOSUJ                                           ;
 ; Top-level Entity Name              ; CZAS                                            ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 1,570 / 18,752 ( 8 % )                          ;
-;     Total combinational functions  ; 1,570 / 18,752 ( 8 % )                          ;
-;     Dedicated logic registers      ; 58 / 18,752 ( < 1 % )                           ;
-; Total registers                    ; 58                                              ;
-; Total pins                         ; 30 / 315 ( 10 % )                               ;
+; Total logic elements               ; 2,098 / 18,752 ( 11 % )                         ;
+;     Total combinational functions  ; 2,098 / 18,752 ( 11 % )                         ;
+;     Dedicated logic registers      ; 59 / 18,752 ( < 1 % )                           ;
+; Total registers                    ; 59                                              ;
+; Total pins                         ; 33 / 315 ( 10 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/27/2018 14:57:49 ;
+; Start date & time ; 04/06/2018 11:17:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LOSUJ               ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 203178703750894.152215546900224       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 159090363910780.152300622306264       ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; CZAS        ; Top        ;
@@ -93,11 +93,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 415 MB              ; 00:00:05                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 495 MB              ; 00:00:10                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 388 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 357 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 415 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 498 MB              ; 00:00:13                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 391 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 392 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:22                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +106,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; pc24h            ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; pc24h            ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; pc24h            ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; pc24h            ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; pc24b            ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; pc24b            ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; pc24b            ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; pc24b            ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

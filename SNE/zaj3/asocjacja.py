@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import numpy as np
+#import numpy as np
 
 z0 = [
  -1.0, -1.0, -1.0, -1.0, -1.0,
@@ -40,19 +40,13 @@ for i in range (0, 25):
 
 def sgn(x):
     if x >= 0:
-        return 1.0
+        x = 1
     else:
-        return 0.0
+        x = 0
 
-def SGN_D( x ):
+def F( z ):
   for i in range (0, 25):
-    x[i] = sgn(x[i])
-
-def F( x ):
-  for i in range (0, 25):
-    x[i] = SGN_D(x[i])
-
-
+    sgn(z[i]*W[i])
 
 def interface( x ):
     for i in range (0, 25):
@@ -65,3 +59,4 @@ def interface( x ):
 
 print(interface(z0))
 print(interface(z1))
+print(W)

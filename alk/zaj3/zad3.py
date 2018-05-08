@@ -10,13 +10,13 @@ n = int(input("Wprowadz maksymalna wartosc w zbiorze (n): "))
 
 r = int(input("Wprowadz range szukanego podzbioru: "))
 
-BinR = [] #tablica przechowująca wartość binarną rangi 
+BinR = [] #tablica przechowująca wartość binarną rangi
 
 while(r>0):
     BinR.append(r%2)
     r = r // 2
-    
-BinR.reverse()  
+
+BinR.reverse()
 
 while(len(BinR)<n):
     BinR.insert(0, 0)
@@ -30,4 +30,5 @@ print ("{ ", end='')
 for i in range (0, n):
     if BinR[i] != 0:
         print (i+1, end=' ')
-print ("}")    
+print ("}")
+print(BinR)

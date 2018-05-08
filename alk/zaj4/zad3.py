@@ -11,8 +11,8 @@ def dwumian_newtona(n, k):
             iloczyn = iloczyn / pom
             pom = pom+1
     return int(iloczyn)
-n = int(input("podaj range n:"))
-k = int(input("podaj range k:"))
+n = int(input("podaj max wartosc elementu, czyli n:"))
+k = int(input("podaj k, liczbe elementow podzbioru:"))
 r = int(input("podaj range r:"))
 T = []
 x = 1

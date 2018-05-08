@@ -1,0 +1,5 @@
+
+State Machine - |CZAS|pom
+Name pom.0000000000000001 
+pom.0000000000000000 0 
+pom.0000000000000001 1 

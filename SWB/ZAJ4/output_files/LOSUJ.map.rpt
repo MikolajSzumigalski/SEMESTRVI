@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LOSUJ
-Tue Mar 27 14:57:54 2018
+Fri Apr 06 11:17:10 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,23 +13,26 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
- 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
- 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
- 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
- 17. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
- 18. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod4
- 19. Port Connectivity Checks: "DECtoHEX:comb_11"
- 20. Port Connectivity Checks: "DECtoHEX:comb_8"
- 21. Port Connectivity Checks: "DECtoHEX:comb_5"
- 22. Port Connectivity Checks: "DECtoHEX:comb_3"
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  8. State Machine - |CZAS|pom
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 17. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 18. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
+ 19. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 20. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod4
+ 21. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod5
+ 22. Port Connectivity Checks: "DECtoHEX:comb_11"
+ 23. Port Connectivity Checks: "DECtoHEX:comb_8"
+ 24. Port Connectivity Checks: "DECtoHEX:comb_5"
+ 25. Port Connectivity Checks: "DECtoHEX:comb_3"
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -55,16 +58,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 27 14:57:54 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 06 11:17:09 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LOSUJ                                           ;
 ; Top-level Entity Name              ; CZAS                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,570                                           ;
-;     Total combinational functions  ; 1,570                                           ;
-;     Dedicated logic registers      ; 58                                              ;
-; Total registers                    ; 58                                              ;
-; Total pins                         ; 30                                              ;
+; Total logic elements               ; 2,098                                           ;
+;     Total combinational functions  ; 2,098                                           ;
+;     Dedicated logic registers      ; 59                                              ;
+; Total registers                    ; 59                                              ;
+; Total pins                         ; 33                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -196,34 +199,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 1,570    ;
-;                                             ;          ;
-; Total combinational functions               ; 1570     ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 354      ;
-;     -- 3 input functions                    ; 420      ;
-;     -- <=2 input functions                  ; 796      ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 1097     ;
-;     -- arithmetic mode                      ; 473      ;
-;                                             ;          ;
-; Total registers                             ; 58       ;
-;     -- Dedicated logic registers            ; 58       ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 30       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 58       ;
-; Total fan-out                               ; 4256     ;
-; Average fan-out                             ; 2.57     ;
-+---------------------------------------------+----------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 2,098  ;
+;                                             ;        ;
+; Total combinational functions               ; 2098   ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 533    ;
+;     -- 3 input functions                    ; 652    ;
+;     -- <=2 input functions                  ; 913    ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 1490   ;
+;     -- arithmetic mode                      ; 608    ;
+;                                             ;        ;
+; Total registers                             ; 59     ;
+;     -- Dedicated logic registers            ; 59     ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 33     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; KEY[3] ;
+; Maximum fan-out                             ; 63     ;
+; Total fan-out                               ; 5907   ;
+; Average fan-out                             ; 2.70   ;
++---------------------------------------------+--------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -231,7 +234,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
-; |CZAS                                  ; 1570 (88)         ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |CZAS                                                                                                 ; work         ;
+; |CZAS                                  ; 2098 (207)        ; 59 (59)      ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |CZAS                                                                                                 ; work         ;
 ;    |DECtoHEX:comb_11|                  ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|DECtoHEX:comb_11                                                                                ; work         ;
 ;    |DECtoHEX:comb_3|                   ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|DECtoHEX:comb_3                                                                                 ; work         ;
 ;    |DECtoHEX:comb_5|                   ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|DECtoHEX:comb_5                                                                                 ; work         ;
@@ -264,12 +267,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_divide_j6m:auto_generated|  ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod3|lpm_divide_j6m:auto_generated                                                   ; work         ;
 ;          |sign_div_unsign_qlh:divider| ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod3|lpm_divide_j6m:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
 ;             |alt_u_div_m2f:divider|    ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod3|lpm_divide_j6m:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider ; work         ;
-;    |lpm_divide:Mod4|                   ; 407 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4                                                                                 ; work         ;
-;       |lpm_divide_a8m:auto_generated|  ; 407 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4|lpm_divide_a8m:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_hnh:divider| ; 407 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4|lpm_divide_a8m:auto_generated|sign_div_unsign_hnh:divider                       ; work         ;
-;             |alt_u_div_46f:divider|    ; 407 (407)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4|lpm_divide_a8m:auto_generated|sign_div_unsign_hnh:divider|alt_u_div_46f:divider ; work         ;
+;    |lpm_divide:Mod4|                   ; 406 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4                                                                                 ; work         ;
+;       |lpm_divide_a8m:auto_generated|  ; 406 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4|lpm_divide_a8m:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_hnh:divider| ; 406 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4|lpm_divide_a8m:auto_generated|sign_div_unsign_hnh:divider                       ; work         ;
+;             |alt_u_div_46f:divider|    ; 406 (406)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod4|lpm_divide_a8m:auto_generated|sign_div_unsign_hnh:divider|alt_u_div_46f:divider ; work         ;
+;    |lpm_divide:Mod5|                   ; 410 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod5                                                                                 ; work         ;
+;       |lpm_divide_a8m:auto_generated|  ; 410 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod5|lpm_divide_a8m:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_hnh:divider| ; 410 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod5|lpm_divide_a8m:auto_generated|sign_div_unsign_hnh:divider                       ; work         ;
+;             |alt_u_div_46f:divider|    ; 410 (410)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CZAS|lpm_divide:Mod5|lpm_divide_a8m:auto_generated|sign_div_unsign_hnh:divider|alt_u_div_46f:divider ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------+
+; State Machine - |CZAS|pom                   ;
++----------------------+----------------------+
+; Name                 ; pom.0000000000000001 ;
++----------------------+----------------------+
+; pom.0000000000000000 ; 0                    ;
+; pom.0000000000000001 ; 1                    ;
++----------------------+----------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -310,17 +328,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; pom~4                                  ; Lost fanout        ;
+; pom~5                                  ; Lost fanout        ;
+; pom~6                                  ; Lost fanout        ;
+; pom~7                                  ; Lost fanout        ;
+; pom~8                                  ; Lost fanout        ;
+; pom~9                                  ; Lost fanout        ;
+; pom~10                                 ; Lost fanout        ;
+; pom~11                                 ; Lost fanout        ;
+; pom~12                                 ; Lost fanout        ;
+; pom~13                                 ; Lost fanout        ;
+; pom~14                                 ; Lost fanout        ;
+; pom~15                                 ; Lost fanout        ;
+; pom~16                                 ; Lost fanout        ;
+; pom~17                                 ; Lost fanout        ;
+; pom~18                                 ; Lost fanout        ;
+; Total Number of Removed Registers = 15 ;                    ;
++----------------------------------------+--------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 58    ;
+; Total registers                              ; 59    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 15    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -330,9 +372,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
-; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |CZAS|DECtoHEX:comb_3|wyj[6]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |CZAS|liczpo3[11]             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CZAS|pom                     ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |CZAS|DECtoHEX:comb_3|wyj[1]  ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |CZAS|DECtoHEX:comb_5|wyj[6]  ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |CZAS|DECtoHEX:comb_8|wyj[1]  ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |CZAS|DECtoHEX:comb_8|wyj[6]  ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |CZAS|DECtoHEX:comb_11|wyj[6] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 
@@ -521,6 +565,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod5 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 26             ; Untyped                ;
+; LPM_WIDTHD             ; 19             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_a8m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "DECtoHEX:comb_11"                                                                                                                                                                  ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -566,7 +633,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -576,7 +643,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 27 14:57:48 2018
+    Info: Processing started: Fri Apr 06 11:17:02 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LOSUJ -c LOSUJ
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12019): Can't analyze file -- file LOSUJ.vhd is missing
@@ -584,22 +651,22 @@ Warning (12019): Can't analyze file -- file LOSUJ.v is missing
 Info (12021): Found 2 design units, including 2 entities, in source file czas.v
     Info (12023): Found entity 1: DECtoHEX
     Info (12023): Found entity 2: CZAS
-Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(134): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(135): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(136): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(137): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(139): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(140): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(141): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at CZAS.v(142): instance has no name
 Info (12127): Elaborating entity "CZAS" for the top level hierarchy
 Info (12128): Elaborating entity "DECtoHEX" for hierarchy "DECtoHEX:comb_3"
-Warning (10240): Verilog HDL Always Construct warning at CZAS.v(103): inferring latch(es) for variable "wyj", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "wyj[0]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[1]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[2]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[3]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[4]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[5]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[6]" at CZAS.v(105)
-Info (10041): Inferred latch for "wyj[7]" at CZAS.v(105)
-Info (278001): Inferred 8 megafunctions from design logic
+Warning (10240): Verilog HDL Always Construct warning at CZAS.v(106): inferring latch(es) for variable "wyj", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "wyj[0]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[1]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[2]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[3]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[4]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[5]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[6]" at CZAS.v(108)
+Info (10041): Inferred latch for "wyj[7]" at CZAS.v(108)
+Info (278001): Inferred 9 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1"
@@ -608,6 +675,7 @@ Info (278001): Inferred 8 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod5"
 Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0"
 Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "16"
@@ -669,6 +737,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_46f.tdf
     Info (12023): Found entity 1: alt_u_div_46f
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (17049): 15 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_j6m:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_15_result_int[0]~0"
     Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_j6m:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_6_result_int[0]~10"
@@ -693,16 +762,17 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_j6m:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_14_result_int[0]~10"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]"
-Info (21057): Implemented 1642 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+Info (21057): Implemented 2132 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 1612 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info (21061): Implemented 2099 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 424 megabytes
-    Info: Processing ended: Tue Mar 27 14:57:54 2018
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Fri Apr 06 11:17:10 2018
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:06
 
 

@@ -32,3 +32,5 @@
 \r generowanie.gp
 \r szyfrowanie.gp
 \r deszyfrowanie.gp
+\r szyfrowanie.gp
+exit

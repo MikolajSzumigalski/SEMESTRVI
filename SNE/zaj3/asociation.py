@@ -1,5 +1,5 @@
 import numpy as np
-
+from numpy import *
 def sgn(v):
     if v >= 0: return 1
     else: return -1

@@ -2,6 +2,7 @@ Dodaj = (x1, x2, y1, y2, x3, y3) ->{
   if ( x1 != x2,
         m = (y2 - y1)/(x2 - x1);
         x3 = lift(Mod(m*m - x1 - x2, p));
+
         y3 = lift(Mod( m *(x1-x3) - y1,p));
       );
 
@@ -28,7 +29,7 @@ x=random(p);
 y=random(p);
 a=random(p);
 b = lift(Mod(y*y - (x*x*x + a*x), p));
-while( lift(Mod(4*a*a*a+27*b*b,p)) ==0,
+while( lift(Mod(4*a*a*a+27*b*b,p)) == 0,
       x=random(p);
       y=random(p);
       a=random(p);

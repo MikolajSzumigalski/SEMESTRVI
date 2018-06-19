@@ -5,3 +5,5 @@ parisemax = 8000000
 parisemax 
 parisemax = 800000000
 \r rPollard.gp
+exit
+quit

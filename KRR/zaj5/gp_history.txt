@@ -21,3 +21,18 @@ isprime(p)
 isprime(q)
 q
 n
+\r zad.gp
+exit
+\r zad.gp
+p*q
+n
+\r zad.gp
+n
+\r zad.gp
+exit
+e
+exit
+close
+fuck you
+q
+quit

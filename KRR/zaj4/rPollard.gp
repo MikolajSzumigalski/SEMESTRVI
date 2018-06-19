@@ -8,7 +8,7 @@ rPollard = (n) -> {
  i = 2;
  while (i < sqrt(n),
   licznik = licznik +1;
-  xp =x;
+  xp = x;
   yp = y;
   x = f(xp);
   y = f(f(yp));

@@ -8,7 +8,7 @@ B = (d,e,n) ->
     t = t / 2;
     );
 
-  a = random(n);
+  a = random(n-1);
 
   if(gcd(a,n) > 1,
     p = gcd(a,n);
@@ -33,6 +33,7 @@ B = (d,e,n) ->
 }
 
 {
+p = 1;
 read("rsa3.out");
 B(d,e,n);
 print("p: ", p);

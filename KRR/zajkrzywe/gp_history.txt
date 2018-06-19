@@ -1,1 +1,27 @@
 \r krzywe.gp 
+\r krzywe.gp
+krzywa
+wypiszKrzywa(krzywa)
+\r krzywe.gp
+wypiszKrzywa(krzywa)
+\r krzywe.gp
+wypiszPunkt(krzywa)
+\r krzywe.gp
+wypiszPunkt(krzywa)
+\r krzywe.gp
+wypiszPunkt(krzywa)
+wypiszKrzywa(krzywa)
+\r krzywe.gp
+wypiszPunkt(krzywa)
+wypiszKrzywa(krzywa)
+\r krzywe.gp
+wypiszKrzywa(krzywa)
+\r krzywe.gp
+wypiszKrzywa(krzywa)
+\r krzywe.gp
+bye
+exit
+close
+end
+clear
+\r krzywe.gp
